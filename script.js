@@ -2,6 +2,10 @@ const inputText = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
 const image = document.querySelector('#meme-image');
 
+const fireButton = document.getElementById('fire');
+const waterButton = document.getElementById('water');
+const earthButton = document.getElementById('earth');
+
 inputText.addEventListener('input', () => {
   memeText.innerText = inputText.value;
 });

@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Gerador de Memes</h1>
     <form>
         <label for="text-input">Digite o texto:</label>
-        <input type="text" id="text-input">
+        <input type="text" id="text-input" maxlength="60" placeholder="Insira o texto aqui">
         <input type="file" id="meme-insert">
     </form>
     <div id="meme-preview">
         <div id="meme-image-container">
             <img src="#" id="meme-image">
-            <div id="meme-text">Texto do Meme</div>
+            <div id="meme-text"></div>
         </div>
     </div>
+    <button id="fire"></button>
+    <button id="water"></button>
+    <button id="earth"></button>
+    
     <script src="script.js"></script>
 </body>
 </html>
