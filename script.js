@@ -1,5 +1,6 @@
 const inputText = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
+const image = document.querySelector('#meme-image');
 
 inputText.addEventListener('input', () => {
   memeText.innerText = inputText.value;
@@ -18,4 +19,12 @@ input.addEventListener('change', () => {
   });
 
   reader.readAsDataURL(file);
+});
+
+input.addEventListener('input', () => {
+  memeText.textContent = input.value;
+});
+
+input.addEventListener('change', (event) => {
+  image.src = URL.createObjectURL(event.target.files[0]);
 });
